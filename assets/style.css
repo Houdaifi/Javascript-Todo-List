@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    background-color: #e7e7de;
+    font-family: 'Abel', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #0f3057;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #0f3057;
+}
+.form{
+    text-align: left;
+}
+input{
+    width: 350px;
+    height: 30px;
+    background-color: #008891;
+    position: relative;
+    opacity: 0.5;
+    border-radius: 5px;
+    border:1px solid;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+.submit{
+    cursor: pointer;
+    width: 80px;
+    height: 33px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #0f3057;
+    color: #e7e7de;
+    float: right;
+}
+#TasksList{
+    position: fixed;
+}
+#taskInput{
+    display: flex;
+}
+.checkBoxInput{
+    width: 20px;
+    height: 20px;
+}
+.removeBtn{
+    background-color: red;
+    margin-left:5px;
+}
