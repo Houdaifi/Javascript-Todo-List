@@ -1,59 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 body{
     margin: 0;
-    background-color: #e7e7de;
-    font-family: 'Abel', sans-serif;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-h1{
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    color: #0f3057;
-    font-size: 40px;
-}
-h2{
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    color: #0f3057;
-}
-.form{
-    text-align: left;
-}
-input{
-    width: 350px;
-    height: 30px;
-    background-color: #008891;
-    position: relative;
-    opacity: 0.5;
-    border-radius: 5px;
-    border:1px solid;
-    outline: none;
-    color: white;
-    font-size: 18px;
-}
-.submit{
-    cursor: pointer;
-    width: 80px;
-    height: 33px;
-    border-radius: 5px;
-    border: 0px;
-    background-color: #0f3057;
-    color: #e7e7de;
-    float: right;
-}
-#TasksList{
-    position: fixed;
-}
-#taskInput{
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.checkBoxInput{
-    width: 20px;
-    height: 20px;
+
+#TodoList{
+    width: 40vw;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 40px;
+    padding: 20px;
 }
-.removeBtn{
-    background-color: red;
-    margin-left:5px;
+
+#TodoHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    text-decoration: none;
+    color: black;
+    font-size: 32px;
+    font-family: 'Carter One', cursive;
+}
+
+#AddTaskBtn{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+#AddTaskBtn:focus {
+    outline: none;
+}
+#AddTaskBtn:active {
+    transform: scale(0.98);
+}
+
+#taskAdd{
+    border-radius: 5px;
+    outline: 0px;
+    width: 97%;
+    padding: 10px;
+    margin-top: 15px;
+    border: solid 1px #E5E5E5;
+    display: none;
+}
+
+#Tasks{
+    margin-top: 15px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.task{
+    height: 80px;
+    padding-top: 1px;
+    padding-left: 20px;
+    color: #fff;
+    background-color: #393e46;
+    
+    border-radius: 5px;
+    margin-bottom: 10px;
+    line-height: 15px;
+    border-left: 5px solid green;
+}
+
+h2{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.actions{
+    padding: 20px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-clipboard-check{
+    color: #a7d129;
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.fa-trash-alt{
+    color: #ee4540;
+    font-size: 24px;
+    cursor: pointer;
 }

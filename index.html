@@ -4,30 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>Todo List</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     
-    <div id="todoList">
-        <h1>Todo List</h1>
-        <div class="form">
-            <form action="">
-                <label for="task">Add a Task:</label><br>
-                <input type="text" placeholder="" id="taskAdd">
-                <button style="margin-right: 30px;" class="submit" type="button" id="addTaskBtn" onclick="AddTask()">Add</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="TasksList">
-        <h2>Your Tasks List..</h2>
-        <div id="taskInput">
-            <input type="checkbox" name="" id="" class="checkBoxInput">
-            <input type="text" placeholder="" class="task">
-            <button class="removeBtn submit" type="button" id="addTaskBtn">Remove</button>
+    <div id="TodoList">
+        <nav id="TodoHead">
+            <a href="" id="logo">TodoList</a>
+            <button onclick="ToggleNewTaskInput()" id="AddTaskBtn">Add task</button>
+        </nav>
+        <input type="text" id="taskAdd" placeholder="Add new task...">
+        <div id="Tasks">
         </div>
     </div>
 
